@@ -45,7 +45,7 @@ ZSH_CUSTOM=$HOME/zsh_custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git svn vagrant bower brew composer codeception history-substring-search)
+plugins=(git svn vagrant bower brew composer history-substring-search)
 
 # User configuration
 
