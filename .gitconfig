@@ -1,6 +1,6 @@
 [user]
- name = mattc-cogapp
- email = mattc@cogapp.com
+	name = mattc-cogapp
+	email = mattc@cogapp.com
 
 [color]
   ui = true
