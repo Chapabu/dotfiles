@@ -52,6 +52,8 @@ plugins=(git svn vagrant bower brew composer history-substring-search)
 export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/MattC/.rvm/gems/ruby-2.1.2/bin:/Users/MattC/.rvm/gems/ruby-2.1.2@global/bin:/Users/MattC/.rvm/rubies/ruby-2.1.2/bin:/Users/MattC/.composer/vendor/bin:/usr/local/sbin:node_modules/.bin:vendor/bin:#{HOMEBREW_PREFIX}/bin:/Users/MattC/.rvm/bin:/Users/MattC/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+export PATH="/Users/MattC/Scripts/bin:$PATH"
+
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -80,6 +82,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.bash_aliases
+source ~/.private_aliases
 source ~/.profile
 
 autoload bashcompinit
@@ -94,11 +97,14 @@ alias svn="noglob svn"
 # Exports
 export SVN_EDITOR="vim"
 
+export EDITOR="/usr/local/bin/subl"
+export DISABLE_AUTO_TITLE=true
+
 fpath=(/usr/local/share/zsh-completions $fpath)
 
-source $(brew --prefix nvm)/nvm.sh
-export NVM_DIR=~/.nvm
-nvm use default > /dev/null
+#source $(brew --prefix nvm)/nvm.sh
+#export NVM_DIR=~/.nvm
+#nvm use default > /dev/null
 
 eval `/usr/libexec/path_helper -s`
 

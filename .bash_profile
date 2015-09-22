@@ -21,6 +21,8 @@ export LANG="en_GB"
 export LANGUAGE=$LANG
 export LC_ALL=$LANG
 
+export EDITOR="/usr/local/bin/subl"
+
 # http://bashrcgenerator.com/
 export PS1="\[\e[00;37m\]\u@\h:[\[\e[0m\]\[\e[00;33m\]\w\[\e[0m\]\[\e[00;37m\]]\[\e[0m\] 💩  "
 

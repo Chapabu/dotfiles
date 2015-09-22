@@ -25,6 +25,7 @@
   svnl = svn log --oneline --show-commit
   bra = branch -vva
   fap = fetch --all --prune
+  compare = log --left-right --graph --cherry-pick --oneline
 
 [core]
   excludesfile = /Users/MattC/.gitignore_global
