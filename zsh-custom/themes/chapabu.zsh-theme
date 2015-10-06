@@ -1,7 +1,7 @@
 # Tutorial here: http://code.tutsplus.com/tutorials/how-to-customize-your-command-prompt--net-24083
 
 PROMPT='
-$fg[cyan]%m: $fg[yellow][$(get_pwd)]$fg_bold[blue][$(rvm_prompt_info)]$(put_spacing)$(git_prompt_info)$(svn_prompt_info)
+$fg[cyan]%m: $fg[yellow][$(get_pwd)]$(put_spacing)$(git_prompt_info)$(svn_prompt_info)
 $reset_color→ '
 
 ##
@@ -11,13 +11,6 @@ $reset_color→ '
 # Get the PWD, but switch to ~ if home is found.
 function get_pwd() {
   echo "${PWD/$HOME/~}"
-}
-
-function rvm_prompt_info {
-    rbv=`rvm-prompt`
-    rbv=${rbv#ruby-}
-    [[ $rbv == *"@"* ]] || rbv="${rbv}@default"
-    echo $rbv
 }
 
 # Fake right alignment.
@@ -38,17 +31,9 @@ function put_spacing() {
       svn=0
   fi
 
-  local rvm="$(rvm_prompt_info)"
-
-  if [ ${#rvm} != 0 ]; then
-      ((rvm=${#rvm}))
-  else
-      svn=0
-  fi
-
   local termwidth
   # We're unlikely to be in both an SVN and a GIT repo, so to keep it clean I'm just going to all spacing adjustments here.
-  (( termwidth = ${COLUMNS} - 3 - ${#HOST} - 4 - ${#$(get_pwd)} - ${rvm} - ${git} - ${svn} ))
+  (( termwidth = ${COLUMNS} - ${#HOST} - ${#$(get_pwd)} - ${git} - ${svn} ))
 
   local spacing=""
 
@@ -81,9 +66,6 @@ function svn_prompt_info() {
 ##
 # VARIABLES
 ##
-
-# RVM prompt variables
-ZSH_THEME_RVM_PROMPT="%n@%m %~ $(rvm_prompt_info)"
 
 # Git prompt variables
 ZSH_THEME_GIT_PROMPT_PREFIX="[git:"
