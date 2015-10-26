@@ -45,7 +45,7 @@ ZSH_CUSTOM=$HOME/zsh_custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git svn brew composer history-substring-search)
+plugins=(git brew composer history-substring-search)
 
 # User configuration
 
@@ -92,7 +92,6 @@ source $HOME/.composer/vendor/drush/drush/drush.complete.sh
 # ZSH specific aliases
 alias reload_profile="source ~/.zshrc;echo \"Reloaded .zshrc!\""
 alias bower='noglob bower'
-alias svn="noglob svn"
 
 # Exports
 export SVN_EDITOR="vim"
