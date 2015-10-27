@@ -18,14 +18,14 @@ function put_spacing() {
   local git="$(git_prompt_info)"
 
   if [ ${#git} != 0 ]; then
-      ((git=${#git} - 6))
+      ((git=${#git} - 10))
   else
       git=0
   fi
 
   local termwidth
   # We're unlikely to be in both an SVN and a GIT repo, so to keep it clean I'm just going to all spacing adjustments here.
-  (( termwidth = ${COLUMNS} - ${#HOST} - ${#$(get_pwd)} - ${git} ))
+  (( termwidth = ${COLUMNS} - ${#HOST} - ${#$(get_pwd)} - ${git} - 4))
 
   local spacing=""
 
