@@ -10,6 +10,7 @@ export PATH=/usr/local/sbin:$PATH
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH=/usr/local/bin:$PATH
 export PATH="$HOME/Library/blackbox/bin:$PATH"
+export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
 
 # SVN config
 export SVN_EDITOR="vim"

@@ -18,6 +18,9 @@ nmap :bn :BufSurfForward<cr>
 " Create split below
 nmap :sp :rightbelow sp<cr>
 
+" Show open buffers
+nmap <leader>l :files<cr>
+
 " Open splits
 nmap vs :vsplit<cr>
 nmap sp :split<cr>

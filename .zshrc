@@ -101,6 +101,9 @@ export DISABLE_AUTO_TITLE=true
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
+# The Fuck
+eval $(thefuck --alias)
+
 #source $(brew --prefix nvm)/nvm.sh
 #export NVM_DIR=~/.nvm
 #nvm use default > /dev/null
