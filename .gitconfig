@@ -20,14 +20,12 @@
   lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
   ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
   la = "!git config -l | grep alias | cut -c 7-"
-  svnr = svn rebase
-  svnd = svn dcommit
-  svnl = svn log --oneline --show-commit
   bra = branch -vva
   fap = fetch --all --prune
   compare = log --left-right --graph --cherry-pick --oneline
 	current = rev-parse --abbrev-ref HEAD
-	pd = "!CURRENT=$(git current);git checkout develop;git pull;git checkout ${CURRENT}"
+	pb = "!f() { CURRENT=$(git current); git checkout $1 && git pull && git checkout ${CURRENT}; }; f"
+	pd = "!git pb develop"
 
 [core]
   excludesfile = /Users/mchapman/.gitignore_global
