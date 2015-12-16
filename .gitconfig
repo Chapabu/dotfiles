@@ -1,6 +1,6 @@
 [user]
-	name = mattc-cogapp
-	email = mattc@cogapp.com
+	name = chapabu
+	email = chapabu101@gmail.com
 
 [color]
   ui = true
@@ -26,9 +26,11 @@
   bra = branch -vva
   fap = fetch --all --prune
   compare = log --left-right --graph --cherry-pick --oneline
+	current = rev-parse --abbrev-ref HEAD
+	pd = "!CURRENT=$(git current);git checkout develop;git pull;git checkout ${CURRENT}"
 
 [core]
-  excludesfile = /Users/MattC/.gitignore_global
+  excludesfile = /Users/mchapman/.gitignore_global
   editor = vim
 	autocrlf = input
 

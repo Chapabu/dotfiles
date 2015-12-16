@@ -96,7 +96,7 @@ alias bower='noglob bower'
 # Exports
 export SVN_EDITOR="vim"
 
-export EDITOR="/usr/local/bin/subl"
+export EDITOR="/usr/local/bin/atom"
 export DISABLE_AUTO_TITLE=true
 
 fpath=(/usr/local/share/zsh-completions $fpath)
@@ -104,12 +104,10 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 # The Fuck
 eval $(thefuck --alias)
 
-#source $(brew --prefix nvm)/nvm.sh
-#export NVM_DIR=~/.nvm
-#nvm use default > /dev/null
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+nvm alias default v4.2.2 > /dev/null
 
 eval `/usr/libexec/path_helper -s`
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
