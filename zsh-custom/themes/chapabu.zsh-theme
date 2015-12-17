@@ -2,7 +2,7 @@
 
 PROMPT='
 $fg[yellow]$(get_pwd)$(put_spacing)$(git_prompt_info)
-$fg[cyan]→ '
+$fg[cyan]→'
 
 ##
 # FUNCTIONS
