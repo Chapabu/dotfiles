@@ -1,8 +1,8 @@
 # Tutorial here: http://code.tutsplus.com/tutorials/how-to-customize-your-command-prompt--net-24083
 
 PROMPT='
-$fg[cyan]%m: $fg[yellow][$(get_pwd)]$(put_spacing)$(git_prompt_info)
-$reset_color→ '
+$fg[yellow]$(get_pwd)$(put_spacing)$(git_prompt_info)
+$fg[cyan]→ '
 
 ##
 # FUNCTIONS
@@ -25,7 +25,7 @@ function put_spacing() {
 
   local termwidth
   # We're unlikely to be in both an SVN and a GIT repo, so to keep it clean I'm just going to all spacing adjustments here.
-  (( termwidth = ${COLUMNS} - ${#HOST} - ${#$(get_pwd)} - ${git} - 4))
+  (( termwidth = ${COLUMNS} - ${#$(get_pwd)} - ${git}))
 
   local spacing=""
 
@@ -46,7 +46,7 @@ function git_prompt_info() {
 ##
 
 # Git prompt variables
-ZSH_THEME_GIT_PROMPT_PREFIX="[git:"
+ZSH_THEME_GIT_PROMPT_PREFIX="["
 ZSH_THEME_GIT_PROMPT_SUFFIX="]$reset_color"
 ZSH_THEME_GIT_PROMPT_DIRTY="$fg[red]💩  "
 ZSH_THEME_GIT_PROMPT_CLEAN="$fg[green]🍺  "
