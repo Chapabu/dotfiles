@@ -98,6 +98,9 @@ export SVN_EDITOR="vim"
 
 export EDITOR="/usr/local/bin/atom"
 export DISABLE_AUTO_TITLE=true
+export LANG="en_GB.UTF-8"
+export LANGUAGE=$LANG
+export LC_ALL=$LANG
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 

@@ -15,8 +15,7 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH=/usr/local/bin:$PATH
 export PATH="$HOME/Library/blackbox/bin:$PATH"
 
-# SVN config
-export SVN_EDITOR="vim"
+# Locale config
 export LANG="en_GB"
 export LANGUAGE=$LANG
 export LC_ALL=$LANG
