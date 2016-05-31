@@ -23,7 +23,7 @@ export LC_ALL=$LANG
 export EDITOR="/usr/local/bin/subl"
 
 # http://bashrcgenerator.com/
-export PS1="\[\e[00;37m\]\u@\h:[\[\e[0m\]\[\e[00;33m\]\w\[\e[0m\]\[\e[00;37m\]]\[\e[0m\] 💩  "
+export PS1="\[\e[00;37m\]\u@\h:[\[\e[0m\]\[\e[00;33m\]\w\[\e[0m\]\[\e[00;37m\]]\[\e[0m\] ð©  "
 
 # Load in bash completion
 if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
@@ -40,3 +40,5 @@ if [ -f ~/.drush_bashrc ] ; then
 fi
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+export PATH="$PATH:/Applications/DevDesktop/drush"

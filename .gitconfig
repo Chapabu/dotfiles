@@ -1,5 +1,5 @@
 [user]
-	name = chapabu
+	name = Matt Chapman
 	email = chapabu101@gmail.com
 
 [color]
@@ -26,7 +26,7 @@
 	current = rev-parse --abbrev-ref HEAD
 	pb = "!f() { CURRENT=$(git current); git checkout $1 && git pull && git checkout ${CURRENT}; }; f"
 	pd = "!git pb develop"
-
+  brd = "!f() { BRANCH=$1;git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative master..${BRANCH}; }; f"
 [core]
   excludesfile = /Users/mchapman/.gitignore_global
   editor = vim

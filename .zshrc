@@ -49,10 +49,10 @@ plugins=(git brew composer history-substring-search)
 
 # User configuration
 
-export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/MattC/.rvm/gems/ruby-2.1.2/bin:/Users/MattC/.rvm/gems/ruby-2.1.2@global/bin:/Users/MattC/.rvm/rubies/ruby-2.1.2/bin:/Users/MattC/.composer/vendor/bin:/usr/local/sbin:node_modules/.bin:vendor/bin:#{HOMEBREW_PREFIX}/bin:/Users/MattC/.rvm/bin:/Users/MattC/.rvm/bin"
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/mchapman/.rvm/gems/ruby-2.1.2/bin:/Users/mchapman/.rvm/gems/ruby-2.1.2@global/bin:/Users/mchapman/.rvm/rubies/ruby-2.1.2/bin:/Users/mchapman/.composer/vendor/bin:/usr/local/sbin:node_modules/.bin:vendor/bin:#{HOMEBREW_PREFIX}/bin:/Users/mchapman/.rvm/bin:/Users/mchapman/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
-export PATH="/Users/MattC/Scripts/bin:$PATH"
+export PATH="/Users/mchapman/Scripts/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,14 +103,19 @@ export LANGUAGE=$LANG
 export LC_ALL=$LANG
 
 fpath=(/usr/local/share/zsh-completions $fpath)
-
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 # The Fuck
 eval $(thefuck --alias)
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
-nvm alias default v4.2.2 > /dev/null
+nvm alias default v5.11.1 > /dev/null
 
 eval `/usr/libexec/path_helper -s`
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+
+# Automatically added by Platform.sh CLI installer
+export PATH="/Users/mchapman/.platformsh/bin:$PATH"
+. '/Users/mchapman/.platformsh/shell-config.rc' 2>/dev/null
