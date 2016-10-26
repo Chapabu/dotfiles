@@ -103,13 +103,13 @@ export LANGUAGE=$LANG
 export LC_ALL=$LANG
 
 fpath=(/usr/local/share/zsh-completions $fpath)
-code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
 # The Fuck
 eval $(thefuck --alias)
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
-nvm alias default v5.11.1 > /dev/null
+nvm alias default v6 > /dev/null
 
 eval `/usr/libexec/path_helper -s`
 
@@ -119,3 +119,6 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # Automatically added by Platform.sh CLI installer
 export PATH="/Users/mchapman/.platformsh/bin:$PATH"
 . '/Users/mchapman/.platformsh/shell-config.rc' 2>/dev/null
+
+# Drupal console.
+source "$HOME/.console/console.rc" 2>/dev/null
