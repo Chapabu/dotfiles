@@ -22,15 +22,4 @@ export LC_ALL=$LANG
 #     source ~/.drush_bashrc
 # fi
 
-# SAUCE LABS
-export SAUCE_USERNAME=cogapptech
-export SAUCE_ACCESS_KEY=22bb96e6-44b3-4563-992a-c9367a5160c0
-export SAUCE_TUNNEL_ID=mattc-bubble-tunnel
-
 source $HOME/.nvm/nvm.sh
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
-export PATH="$PATH:/Applications/DevDesktop/drush"

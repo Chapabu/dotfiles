@@ -45,11 +45,11 @@ ZSH_CUSTOM=$HOME/zsh_custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew composer history-substring-search)
+plugins=(gitfast brew composer history-substring-search)
 
 # User configuration
 
-export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/mchapman/.rvm/gems/ruby-2.1.2/bin:/Users/mchapman/.rvm/gems/ruby-2.1.2@global/bin:/Users/mchapman/.rvm/rubies/ruby-2.1.2/bin:/Users/mchapman/.composer/vendor/bin:/usr/local/sbin:node_modules/.bin:vendor/bin:#{HOMEBREW_PREFIX}/bin:/Users/mchapman/.rvm/bin:/Users/mchapman/.rvm/bin"
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/mchapman/.composer/vendor/bin:/usr/local/sbin:node_modules/.bin:vendor/bin:#{HOMEBREW_PREFIX}/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 export PATH="/Users/mchapman/Scripts/bin:$PATH"
@@ -86,7 +86,7 @@ source ~/.private_aliases
 source ~/.profile
 
 autoload bashcompinit
-bashcompinit
+bashcompinit -D
 source $HOME/.composer/vendor/drush/drush/drush.complete.sh
 
 # ZSH specific aliases
@@ -112,9 +112,6 @@ source $(brew --prefix nvm)/nvm.sh
 nvm alias default v6 > /dev/null
 
 eval `/usr/libexec/path_helper -s`
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
 
 # Automatically added by Platform.sh CLI installer
 export PATH="/Users/mchapman/.platformsh/bin:$PATH"
