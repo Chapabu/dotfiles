@@ -27,6 +27,8 @@
 	pb = "!f() { CURRENT=$(git current); git checkout $1 && git pull && git checkout ${CURRENT}; }; f"
 	pd = "!git pb develop"
   brd = "!f() { BRANCH=$1;git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative master..${BRANCH}; }; f"
+  ds = diff --staged
+
 [core]
   excludesfile = /Users/mchapman/.gitignore_global
   editor = vim
@@ -34,3 +36,5 @@
 
 [push]
 	default = simple
+[commit]
+	gpgsign = true
