@@ -5,11 +5,8 @@ export LC_ALL=C
 export PATH="#{HOMEBREW_PREFIX}/bin:$PATH"
 export PATH=vendor/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
-#export PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH=/usr/local/bin:$PATH
-export PATH="$HOME/Library/blackbox/bin:$PATH"
-export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
 
 # SVN config
 export SVN_EDITOR="vim"

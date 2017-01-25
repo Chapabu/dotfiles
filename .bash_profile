@@ -13,7 +13,6 @@ export PATH=vendor/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH=/usr/local/bin:$PATH
-export PATH="$HOME/Library/blackbox/bin:$PATH"
 
 # Locale config
 export LANG="en_GB"
