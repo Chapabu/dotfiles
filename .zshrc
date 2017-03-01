@@ -96,7 +96,7 @@ alias bower='noglob bower'
 # Exports
 export SVN_EDITOR="vim"
 
-export EDITOR="/usr/local/bin/atom"
+export EDITOR="/usr/local/bin/code"
 export DISABLE_AUTO_TITLE=true
 export LANG="en_GB.UTF-8"
 export LANGUAGE=$LANG
@@ -119,3 +119,11 @@ export PATH="/Users/mchapman/.platformsh/bin:$PATH"
 
 # Drupal console.
 source "$HOME/.console/console.rc" 2>/dev/null
+
+# Load helpful functions
+if [[ -e ~/.functions.sh ]]; then
+  source ~/.functions.sh
+fi
+
+# added by travis gem
+[ -f /Users/mchapman/.travis/travis.sh ] && source /Users/mchapman/.travis/travis.sh
