@@ -1,0 +1,12 @@
+#! /usr/bin/env bash
+echo "Loaded variables..."
+
+# CLI colours
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+export SVN_EDITOR="vim"
+export EDITOR="/usr/local/bin/code"
+export DISABLE_AUTO_TITLE=true
+export LANG="en_GB.UTF-8"
+export LANGUAGE=$LANG
+export LC_ALL=$LANG

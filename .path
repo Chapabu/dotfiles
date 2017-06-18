@@ -1,0 +1,18 @@
+#! /usr/bin/env bash
+echo "Loaded paths..."
+
+export PATH="$PATH:`yarn global bin`"
+export PATH="/Users/mchapman/.platformsh/bin:$PATH"
+export PATH="#{HOMEBREW_PREFIX}/bin:$PATH"
+export PATH=vendor/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH=/usr/local/bin:$PATH
+export PATH="$PATH:$(yarn global bin)"
+export PATH="#{HOMEBREW_PREFIX}/bin:$PATH"
+export PATH=vendor/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH=/usr/local/bin:$PATH
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/mchapman/.composer/vendor/bin:/usr/local/sbin:node_modules/.bin:vendor/bin:#{HOMEBREW_PREFIX}/bin"
+export PATH="/Users/mchapman/Scripts/bin:$PATH"

@@ -1,0 +1,13 @@
+#! /usr/bin/env bash
+echo "Loaded applications..."
+
+eval `/usr/libexec/path_helper -s`
+
+# Travis CLI
+[ -f /Users/mchapman/.travis/travis.sh ] && source /Users/mchapman/.travis/travis.sh
+
+# Drupal console.
+source "$HOME/.console/console.rc" 2>/dev/null
+
+# The Fuck
+eval $(thefuck --alias)

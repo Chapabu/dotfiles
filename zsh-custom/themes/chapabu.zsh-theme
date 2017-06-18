@@ -1,8 +1,9 @@
 # Tutorial here: http://code.tutsplus.com/tutorials/how-to-customize-your-command-prompt--net-24083
 
 PROMPT='
-$fg[yellow]$(get_pwd)$(put_spacing)$(git_prompt_info)
-$fg[cyan]→'
+🚀  $fg[yellow]$(get_pwd)$(put_spacing)$(git_prompt_info)
+✏️️  '
+
 
 ##
 # FUNCTIONS
@@ -18,7 +19,7 @@ function put_spacing() {
   local git="$(git_prompt_info)"
 
   if [ ${#git} != 0 ]; then
-      ((git=${#git} - 10))
+      ((git=${#git} - 7))
   else
       git=0
   fi
@@ -49,4 +50,4 @@ function git_prompt_info() {
 ZSH_THEME_GIT_PROMPT_PREFIX="["
 ZSH_THEME_GIT_PROMPT_SUFFIX="]$reset_color"
 ZSH_THEME_GIT_PROMPT_DIRTY="$fg[red]💩  "
-ZSH_THEME_GIT_PROMPT_CLEAN="$fg[green]🍺  "
+ZSH_THEME_GIT_PROMPT_CLEAN="$fg[green]🍭  "

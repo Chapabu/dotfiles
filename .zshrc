@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="chapabu"
+ZSH_THEME="mortalscumbag"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -49,10 +49,7 @@ plugins=(gitfast brew composer history-substring-search)
 
 # User configuration
 
-export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/mchapman/.composer/vendor/bin:/usr/local/sbin:node_modules/.bin:vendor/bin:#{HOMEBREW_PREFIX}/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
-
-export PATH="/Users/mchapman/Scripts/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -81,49 +78,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.bash_aliases
-source ~/.private_aliases
-source ~/.profile
 
-autoload bashcompinit
-bashcompinit -D
-source $HOME/.composer/vendor/drush/drush/drush.complete.sh
+DOTFILES=("aliases" "applications" "completion" "functions.sh" "path" "variables")
 
-# ZSH specific aliases
-alias reload_profile="source ~/.zshrc;echo \"Reloaded .zshrc!\""
-alias bower='noglob bower'
-
-# Exports
-export SVN_EDITOR="vim"
-
-export EDITOR="/usr/local/bin/code"
-export DISABLE_AUTO_TITLE=true
-export LANG="en_GB.UTF-8"
-export LANGUAGE=$LANG
-export LC_ALL=$LANG
-
-fpath=(/usr/local/share/zsh-completions $fpath)
-
-# The Fuck
-eval $(thefuck --alias)
-
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-nvm alias default v6 > /dev/null
-
-eval `/usr/libexec/path_helper -s`
-
-# Automatically added by Platform.sh CLI installer
-export PATH="/Users/mchapman/.platformsh/bin:$PATH"
-. '/Users/mchapman/.platformsh/shell-config.rc' 2>/dev/null
-
-# Drupal console.
-source "$HOME/.console/console.rc" 2>/dev/null
-
-# Load helpful functions
-if [[ -e ~/.functions.sh ]]; then
-  source ~/.functions.sh
-fi
-
-# added by travis gem
-[ -f /Users/mchapman/.travis/travis.sh ] && source /Users/mchapman/.travis/travis.sh
+for DOTFILE in "${DOTFILES[@]}"
+do
+  if [[ -f "${HOME}/dotfiles/.${DOTFILE}" ]]; then
+    source "${HOME}/dotfiles/.${DOTFILE}"
+  fi
+done
