@@ -1,7 +1,6 @@
 #! /usr/bin/env bash
 echo "Loaded aliases..."
 
-alias reload_profile="source ~/.bash_profile;echo \"Reloaded .bash_profile!\""
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 alias dr=drush
@@ -16,7 +15,12 @@ alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/Simulato
 alias grep=ggrep
 alias reload_profile="source ~/.zshrc;echo \"Reloaded .zshrc!\""
 alias bower='noglob bower'
-
+alias lsl="ls -la"
+alias vag="vagrant"
+alias y="yarn"
+alias art="php artisan"
+alias typora="open -a typora"
+alias tp="typora"
 # Load in Drush aliaes
 if [ -f ~/.drush_bashrc ]; then
     source ~/.drush_bashrc

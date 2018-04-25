@@ -3,8 +3,7 @@
 # Load antigen
 source /usr/local/share/antigen/antigen.zsh
 
-# Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=$HOME/zsh_custom
+ZSH_CUSTOM="$HOME/dotfiles/zsh_custom"
 
 DOTFILES=("antigen" "aliases" "applications" "completion" "functions.sh" "path" "variables")
 
@@ -14,3 +13,4 @@ do
     source "${HOME}/dotfiles/.${DOTFILE}"
   fi
 done
+

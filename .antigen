@@ -13,9 +13,6 @@ antigen bundle brew
 antigen bundle composer
 antigen bundle history-substring-search
 
-# Syntax highlighting bundle.
-antigen bundle zsh-users/zsh-syntax-highlighting
-
 # Load the theme.
 source ~/dotfiles/.spaceship
 antigen theme denysdovhan/spaceship-zsh-theme
