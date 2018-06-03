@@ -9,13 +9,12 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Default bundles
 antigen bundle gitfast
-antigen bundle brew
 antigen bundle composer
 antigen bundle history-substring-search
 
-# Load the theme.
-source ~/dotfiles/.spaceship
-antigen theme denysdovhan/spaceship-zsh-theme
+# Load in pure.
+antigen bundle mafredri/zsh-async
+antigen bundle sindresorhus/pure
 
 # Tell Antigen that you're done.
 antigen apply
