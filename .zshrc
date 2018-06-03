@@ -5,7 +5,7 @@ source /usr/local/share/antigen/antigen.zsh
 
 ZSH_CUSTOM="$HOME/dotfiles/zsh_custom"
 
-DOTFILES=("antigen" "aliases" "applications" "completion" "functions.sh" "path" "variables")
+DOTFILES=("antigen" "aliases" "applications" "completion" "path" "variables")
 
 for DOTFILE in "${DOTFILES[@]}"
 do
@@ -13,4 +13,3 @@ do
     source "${HOME}/dotfiles/.${DOTFILE}"
   fi
 done
-
