@@ -4,27 +4,14 @@ echo "Loaded aliases..."
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 alias dr=drush
-alias xon="export XDEBUG_CONFIG=\"profiler_enable=1\"; echo \"XDebug enabled for CLI!\""
-alias xoff="export XDEBUG_CONFIG=\"profiler_enable=0\"; echo \"XDebug disabled for CLI!\""
 alias byemux='tmux kill-server'
 alias nah='git reset --hard;git clean -df'
-alias spec="phpspec"
 alias dco="docker-compose"
-alias py="python"
 alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
-alias grep=ggrep
 alias reload_profile="source ~/.zshrc;echo \"Reloaded .zshrc!\""
-alias bower='noglob bower'
-alias lsl="ls -la"
 alias vag="vagrant"
-alias y="yarn"
-alias art="php artisan"
 alias typora="open -a typora"
 alias tp="typora"
-# Load in Drush aliaes
-if [ -f ~/.drush_bashrc ]; then
-    source ~/.drush_bashrc
-fi
 
 if [ -f ~/.private_aliases ]; then
   source ~/.private_aliases
