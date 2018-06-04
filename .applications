@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 echo "Loaded applications..."
 
-eval `/usr/libexec/path_helper -s`
+# eval `/usr/libexec/path_helper -s`
 
 # Drupal console.
 source "$HOME/.console/console.rc" 2>/dev/null

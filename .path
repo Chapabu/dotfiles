@@ -9,7 +9,7 @@ export PATH=vendor/bin:$PATH
 # Node paths.
 
 export PATH=$(yarn global bin):$PATH
-export PATH=node_modules/.bin
+export PATH=node_modules/.bin:$PATH
 
 # Other application paths.
 export PATH="#{HOMEBREW_PREFIX}/bin:$PATH"
