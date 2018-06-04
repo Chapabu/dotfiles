@@ -3,8 +3,6 @@
 # Load antigen
 source /usr/local/share/antigen/antigen.zsh
 
-ZSH_CUSTOM="$HOME/dotfiles/zsh_custom"
-
 DOTFILES=("antigen" "aliases" "applications" "completion" "path" "variables")
 
 for DOTFILE in "${DOTFILES[@]}"
