@@ -11,8 +11,3 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
   . $(brew --prefix)/share/bash-completion/bash_completion
 fi
-
-# Drush
-if [ -f ~/.composer/vendor/drush/drush/drush.complete.sh ] ; then
-    source ~/.composer/vendor/drush/drush/drush.complete.sh
-fi
