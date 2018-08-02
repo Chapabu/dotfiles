@@ -3,7 +3,7 @@
 # Load antigen
 source /usr/local/share/antigen/antigen.zsh
 
-DOTFILES=("antigen" "aliases" "applications" "completion" "path" "variables")
+DOTFILES=("antigen" "aliases" "applications" "completion" "path" "variables" "functions.sh")
 
 for DOTFILE in "${DOTFILES[@]}"
 do

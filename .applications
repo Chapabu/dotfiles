@@ -1,8 +1,7 @@
 #! /usr/bin/env bash
 echo "Loaded applications..."
 
-# Drupal console.
-source "$HOME/.console/console.rc" 2>/dev/null
+# Drupal console is now loaded when required with the load_drupal_console function.
 
 # The Fuck
 eval $(thefuck --alias)
