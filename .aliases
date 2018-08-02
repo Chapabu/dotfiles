@@ -9,9 +9,7 @@ alias nah='git reset --hard;git clean -df'
 alias dco="docker-compose"
 alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
 alias reload_profile="source ~/.zshrc;echo \"Reloaded .zshrc!\""
-alias vag="vagrant"
-alias typora="open -a typora"
-alias tp="typora"
+alias mux="tmuxinator"
 
 if [ -f ~/.private_aliases ]; then
   source ~/.private_aliases
