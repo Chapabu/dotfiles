@@ -1,8 +1,3 @@
-[user]
-  name = Matt Chapman
-  email = chapabu101@gmail.com
-  signingkey = A3F3D3CE
-
 [alias]
   cp = cherry-pick
   st = status -s
@@ -74,3 +69,6 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+
+[include]
+  path = dotfiles/.gitconfig_private
