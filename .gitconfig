@@ -1,10 +1,7 @@
 [user]
-	name = Matt Chapman
-	email = chapabu101@gmail.com
-	signingkey = A3F3D3CE
-
-[color]
-  ui = true
+  name = Matt Chapman
+  email = chapabu101@gmail.com
+  signingkey = A3F3D3CE
 
 [alias]
   cp = cherry-pick
@@ -24,34 +21,56 @@
   bra = branch -vva
   fap = fetch --all --prune
   compare = log --left-right --graph --cherry-pick --oneline
-	current = rev-parse --abbrev-ref HEAD
-	pb = "!f() { CURRENT=$(git current); git checkout $1 && git pull && git checkout ${CURRENT}; }; f"
-	pd = "!git pb develop"
+  current = rev-parse --abbrev-ref HEAD
+  pb = "!f() { CURRENT=$(git current); git checkout $1 && git pull && git checkout ${CURRENT}; }; f"
+  pd = "!git pb develop"
   brd = "!f() { BRANCH=$1;git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative master..${BRANCH}; }; f"
   ds = diff --staged
   db = "!f() { BRANCH=$1;git log $(git merge-base --octopus $(git log -1 --merges --pretty=format:%P)).. --boundary --oneline ${BRANCH}; }; f"
 
 [core]
-	excludesfile = /Users/mchapman/.gitignore_global
+  excludesfile = /Users/mchapman/.gitignore_global
   editor = vim
-	autocrlf = input
+  autocrlf = input
 
 [push]
-	default = simple
+  default = simple
 
 [commit]
-	gpgsign = true
-	template = /Users/mchapman/.stCommitMsg
+  gpgsign = true
+  template = /Users/mchapman/.stCommitMsg
 
 [gpg]
-	program = /usr/local/bin/gpg2
+  program = /usr/local/bin/gpg2
 
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
+
 [rerere]
-	enabled = true
+  enabled = true
+
+[pager]
+  diff = diff-so-fancy | less --tabs=1,5 -RFX
+  show = diff-so-fancy | less --tabs=1,5 -RFX
+  
+[color]
+  ui = true
+  
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+  
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse

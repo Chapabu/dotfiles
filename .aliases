@@ -11,6 +11,11 @@ alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/Simulato
 alias reload_profile="source ~/.zshrc;echo \"Reloaded .zshrc!\""
 alias mux="tmuxinator"
 
+# Amazing things from Remy Sharp: https://remysharp.com/2018/08/23/cli-improved
+alias cat="bat"
+alias ping='prettyping --nolegend'
+alias top="sudo htop"
+
 if [ -f ~/.private_aliases ]; then
   source ~/.private_aliases
 fi
