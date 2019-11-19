@@ -8,8 +8,8 @@ antigen use oh-my-zsh
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Default bundles
+antigen bundle git
 antigen bundle gitfast
-antigen bundle composer
 antigen bundle history-substring-search
 
 # Load in pure.

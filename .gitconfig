@@ -24,7 +24,7 @@
   db = "!f() { BRANCH=$1;git log $(git merge-base --octopus $(git log -1 --merges --pretty=format:%P)).. --boundary --oneline ${BRANCH}; }; f"
 
 [core]
-  excludesfile = /Users/mchapman/.gitignore_global
+  excludesfile = /Users/mchapman/dotfiles/.gitignore_global
   editor = vim
   autocrlf = input
 
@@ -38,30 +38,22 @@
 [gpg]
   program = /usr/local/MacGPG2/bin/gpg2
 
-[difftool "sourcetree"]
-  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-  path =
-
-[mergetool "sourcetree"]
-  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-  trustExitCode = true
-
 [rerere]
   enabled = true
 
 [pager]
   diff = diff-so-fancy | less --tabs=1,5 -RFX
   show = diff-so-fancy | less --tabs=1,5 -RFX
-  
+
 [color]
   ui = true
-  
+
 [color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = red bold 52
 	newNormal = green bold
 	newHighlight = green bold 22
-  
+
 [color "diff"]
 	meta = yellow
 	frag = magenta bold
