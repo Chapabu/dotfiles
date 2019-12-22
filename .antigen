@@ -14,7 +14,7 @@ antigen bundle history-substring-search
 
 # Load in pure.
 antigen bundle mafredri/zsh-async
-antigen bundle sindresorhus/pure
+antigen theme denysdovhan/spaceship-prompt
 
 # Tell Antigen that you're done.
 antigen apply
