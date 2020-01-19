@@ -3,8 +3,7 @@ echo "Loaded aliases..."
 
 # Lazy me is lazy
 alias g="git"
-# alias gst="git status"
-# alias gs="git add"
+alias dco="docker-compose"
 
 alias brwe="brew"
 alias nah='git reset --hard;git clean -df'
