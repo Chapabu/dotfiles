@@ -13,6 +13,7 @@ export PATH=node_modules/.bin:$PATH
 
 # Other application paths.
 export PATH="#{HOMEBREW_PREFIX}/bin:$PATH"
+export PATH="$HOME/flutter/bin:$PATH"
 
 # Misc paths.
 export PATH="/Users/mchapman/Scripts/bin:$PATH"
