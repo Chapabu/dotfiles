@@ -33,7 +33,7 @@
 
 [commit]
   gpgsign = true
-  template = /Users/mchapman/.stCommitMsg
+  # template = /Users/mchapman/.stCommitMsg
 
 [gpg]
   program = /usr/local/MacGPG2/bin/gpg2
