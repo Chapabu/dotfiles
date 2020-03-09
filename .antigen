@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 echo "Loaded Antigen..."
 
-# Load the oh-my-zsh's library.
+# Load the oh-my-zsh.
 antigen use oh-my-zsh
 
 # Syntax highlighting bundle.
@@ -11,8 +11,13 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle git
 antigen bundle gitfast
 antigen bundle history-substring-search
+antigen bundle zsh-users/zsh-autosuggestions
 
-# Load in pure.
+export NVM_LAZY_LOAD=true
+antigen bundle lukechilds/zsh-nvm
+antigen bundle Sparragus/zsh-auto-nvm-use
+
+# Load in theme.
 antigen bundle mafredri/zsh-async
 antigen theme denysdovhan/spaceship-prompt
 
