@@ -2,18 +2,11 @@
 echo "Loaded paths..."
 
 # PHP paths.
-
 export PATH="$HOME/.composer/vendor/bin:$PATH"
-export PATH=vendor/bin:$PATH
 
 # Node paths.
 
 export PATH=$(yarn global bin):$PATH
-export PATH=node_modules/.bin:$PATH
 
 # Other application paths.
-export PATH="#{HOMEBREW_PREFIX}/bin:$PATH"
 export PATH="$HOME/flutter/bin:$PATH"
-
-# Misc paths.
-export PATH="/Users/mchapman/Scripts/bin:$PATH"
