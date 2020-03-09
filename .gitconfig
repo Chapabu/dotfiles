@@ -31,7 +31,6 @@
 [commit]
   sign = false
 
-
 [push]
   default = simple
 
