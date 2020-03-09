@@ -4,18 +4,10 @@ echo "Loaded aliases..."
 # Lazy me is lazy
 alias g="git"
 alias dco="docker-compose"
-
-alias brwe="brew"
 alias nah='git reset --hard;git clean -df'
-
-# Maybe not so lazy now...I'll never remember these.
-alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
 alias reload_profile="source ~/.zshrc;echo \"Reloaded .zshrc!\""
-
-# Amazing things from Remy Sharp: https://remysharp.com/2018/08/23/cli-improved
-alias cat="bat"
-alias ping='prettyping --nolegend'
 alias top="sudo htop"
+alias mux="tmuxinator"
 
 if [ -f ~/.private_aliases ]; then
   source ~/.private_aliases
