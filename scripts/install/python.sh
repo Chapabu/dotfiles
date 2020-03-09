@@ -2,6 +2,8 @@
 
 echo "Adding Python dependencies..."
 
-install python3 python3-pip python3-setuptools
+install python3
+install python3-pip
+install python3-setuptools
 
 pip3 install thefuck

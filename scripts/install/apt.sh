@@ -2,14 +2,10 @@
 
 echo "Adding basic APT dependencies..."
 
-PACKAGES=(
-  curl
-  fonts-powerline
-  htop
-  powerline
-  tmux
-  wget
-  zsh
-)
 
-install ${PACKAGES[@]}
+install curl
+install fonts-powerline
+install htop
+install powerline
+install tmux
+install wget
