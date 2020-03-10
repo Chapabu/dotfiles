@@ -1,19 +1,17 @@
 #! /usr/bin/env bash
 
-# GIVE ME THE POWER!
-if (( $EUID != 0 )); then
-    echo "I'm gonna need you to sudo me."
-    exit
-fi
+if [[ $(id -u) -ne 0 ]] ; then echo "I need the powerz" ; exit 1 ; fi
 
 PWD=$(dirname "$0")
+ME=$(who | awk '{print $1}')
+sudo apt upgrade -y
 
 source ${PWD}/utils.sh
 
-apt update -y
+sudo apt update -y
 
 source ${PWD}/install.sh
 
 echo "Removing unused packages..."
 
-apt autoremove
+sudo apt autoremove
