@@ -2,7 +2,6 @@
 
 echo "Adding basic APT dependencies..."
 
-
 install curl
 install fonts-powerline
 install gnome-shell-extensions
