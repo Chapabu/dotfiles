@@ -8,6 +8,7 @@ antigen use oh-my-zsh
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Default bundles
+antigen bundle thefuck
 antigen bundle git
 antigen bundle gitfast
 antigen bundle history-substring-search
