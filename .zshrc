@@ -1,9 +1,9 @@
 #! /usr/bin/env bash
 
 # Load antigen
-source /usr/local/share/antigen/antigen.zsh
+source ${HOME}/antigen.zsh
 
-DOTFILES=("antigen" "aliases" "applications" "completion" "path" "variables")
+DOTFILES=("path" "antigen" "aliases" "applications" "completion" "variables" "functions")
 
 for DOTFILE in "${DOTFILES[@]}"
 do
