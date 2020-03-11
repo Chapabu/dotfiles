@@ -1,12 +1,14 @@
 #! /usr/bin/env bash
 echo "Loaded paths..."
 
-# PHP paths.
+# PHP.
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
-# Node paths.
-
+# Node.
 export PATH=$(yarn global bin):$PATH
+
+# Python
+export PATH="$HOME/.local/bin:$PATH"
 
 # Other application paths.
 export PATH="$HOME/flutter/bin:$PATH"
