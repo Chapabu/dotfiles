@@ -9,6 +9,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Default bundles
 antigen bundle thefuck
+antigen bundle zdharma/zsh-diff-so-fancy
 antigen bundle git
 antigen bundle gitfast
 antigen bundle history-substring-search
