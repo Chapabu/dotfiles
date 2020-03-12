@@ -1,3 +1,6 @@
+[user]
+  name=Matt Chapman
+
 [alias]
   cp = cherry-pick
   st = status -s
@@ -60,3 +63,9 @@
 
 [include]
   path = dotfiles/.gitconfig_private
+
+[includeIf "gitdir:~/workspace/work/"]
+  path = dotfiles/.gitconfig_work
+
+[includeIf "gitdir:~/work/"]
+    path = ~/work/.gitconfig
