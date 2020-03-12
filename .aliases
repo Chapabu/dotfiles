@@ -8,6 +8,8 @@ alias nah='git reset --hard;git clean -df'
 alias reload_profile="source ~/.zshrc;echo \"Reloaded .zshrc!\""
 alias top="sudo htop"
 alias mux="tmuxinator"
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
 
 if [ -f ~/.private_aliases ]; then
   source ~/.private_aliases
