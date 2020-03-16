@@ -66,6 +66,3 @@
 
 [includeIf "gitdir:~/workspace/work/"]
   path = dotfiles/.gitconfig_work
-
-[includeIf "gitdir:~/work/"]
-    path = ~/work/.gitconfig
