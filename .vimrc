@@ -1,1 +1,0 @@
-/Users/mchapman/.vimrc

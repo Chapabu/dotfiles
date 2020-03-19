@@ -14,9 +14,6 @@ antigen bundle git
 antigen bundle gitfast
 antigen bundle history-substring-search
 antigen bundle zsh-users/zsh-autosuggestions
-
-export NVM_LAZY_LOAD=true
-antigen bundle lukechilds/zsh-nvm
 antigen bundle Sparragus/zsh-auto-nvm-use
 
 # Load in theme.

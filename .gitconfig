@@ -32,7 +32,7 @@
   autocrlf = input
 
 [commit]
-  sign = false
+  gpgsign = true
 
 [push]
   default = simple
