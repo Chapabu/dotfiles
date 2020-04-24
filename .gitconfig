@@ -35,7 +35,7 @@
   gpgsign = true
 
 [gpg]
-  program = gpg2
+  program = gpg
 
 [push]
   default = simple
@@ -67,5 +67,5 @@
 [include]
   path = dotfiles/.gitconfig_private
 
-[includeIf "gitdir:~/workspace/work/"]
+[includeIf "gitdir:~/Workspace/work/"]
   path = dotfiles/.gitconfig_work
