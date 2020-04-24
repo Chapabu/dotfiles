@@ -3,9 +3,6 @@ echo "Loaded applications..."
 
 # Drupal console is now loaded when required with the load_drupal_console function.
 
-# The Fuck
-eval $(thefuck --alias)
-
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
