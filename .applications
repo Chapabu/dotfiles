@@ -7,5 +7,8 @@ echo "Loaded applications..."
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
+# RBEnv
+eval "$(rbenv init -)"
+
 #GPG
 export GPG_TTY=$(tty)

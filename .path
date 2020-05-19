@@ -10,5 +10,8 @@ export PATH=$(yarn global bin):$PATH
 # Python
 export PATH="$HOME/.local/bin:$PATH"
 
+# Ruby
+export PATH="$HOME/.rbenv/bin:$PATH"
+
 # Other application paths.
 export PATH="$HOME/flutter/bin:$PATH"

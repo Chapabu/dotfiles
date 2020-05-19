@@ -7,9 +7,11 @@ alias dco="docker-compose"
 alias nah='git reset --hard;git clean -df'
 alias reload_profile="source ~/.zshrc;echo \"Reloaded .zshrc!\""
 alias top="sudo htop"
-alias mux="tmuxinator"
+alias mxu="tmuxinator"
+alias mx="tmux"
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
+alias gogh='bash -c  "$(wget -qO- https://git.io/vQgMr)"'
 
 if [ -f ~/.private_aliases ]; then
   source ~/.private_aliases
