@@ -25,10 +25,11 @@
   brd = "!f() { BRANCH=$1;git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative master..${BRANCH}; }; f"
   ds = diff --staged
   db = "!f() { BRANCH=$1;git log $(git merge-base --octopus $(git log -1 --merges --pretty=format:%P)).. --boundary --oneline ${BRANCH}; }; f"
+	gone = ! git fetch -p && git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git branch -D
 
 [core]
-  excludesfile = /Users/mchapman/dotfiles/.gitignore_global
-  editor = vim
+  excludesfile = /home/mattc/dotfiles/.gitignore_global
+  editor = nvim
   autocrlf = input
 
 [commit]
@@ -72,3 +73,10 @@
 
 [includeIf "gitdir:/app/"]
   path = dotfiles/.gitconfig_work
+
+[cola]
+	spellcheck = false
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main

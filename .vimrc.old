@@ -1,0 +1,42 @@
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $HOME/.vimrc
+endif
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'itchyny/lightline.vim'
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
+call plug#end()
+
+
+""
+" Built in config
+""
+
+set autochdir
+set showmode
+set nowrap
+set tabstop=2
+set smarttab
+set backspace=indent,eol,start
+set ignorecase
+set smartcase
+
+" With a map leader it's possible to do extra key combinations
+" like <leader>w saves the current file
+let mapleader = ","
+let g:mapleader = ","
+
+" Fast saves
+nmap <leader>w :w!<cr>
+
+""
+" NERDTree commands
+""
+
+nnoremap <C-k>b :NERDTreeToggle<CR>
+nnoremap <C-k><Left> :NERDTreeFocus<CR>

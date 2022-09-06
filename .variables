@@ -5,8 +5,9 @@ echo "Loaded variables..."
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export SVN_EDITOR="vim"
-export EDITOR="/usr/local/bin/code"
+export EDITOR="nvim"
 export DISABLE_AUTO_TITLE=true
 export LANG="en_GB.UTF-8"
 export LANGUAGE=$LANG
 export LC_ALL=$LANG
+export NODE_EXTRA_CA_CERTS="$(mkcert -CAROOT)/rootCA.pem"
