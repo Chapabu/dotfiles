@@ -27,3 +27,6 @@ Temporary Items
 
 ## Directory-based project format:
 .idea/
+
+## Package manager things
+node_modules

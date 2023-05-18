@@ -12,3 +12,6 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
+
+# Flyctl
+export PATH="$HOME/.fly/bin:$PATH"

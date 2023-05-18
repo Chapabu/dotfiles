@@ -13,7 +13,7 @@ antigen bundle git
 antigen bundle gitfast
 antigen bundle history-substring-search
 antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle Sparragus/zsh-auto-nvm-use
+# antigen bundle Sparragus/zsh-auto-nvm-use
 
 # Load in theme.
 antigen bundle mafredri/zsh-async

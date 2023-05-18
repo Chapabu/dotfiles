@@ -1,19 +1,21 @@
 #! /usr/bin/env bash
 echo "Loaded applications..."
 
-# Drupal console is now loaded when required with the load_drupal_console function.
-
 # NVM
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 #GPG
 export GPG_TTY=$(tty)
 
 eval $(thefuck --alias)
 
-export DENO_INSTALL="/home/mattc/.deno"
-export PATH="$DENO_INSTALL/bin:$PATH"
-
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
 export PATH="$HOME/.symfony/bin:$PATH"
+
+# PyEnv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
