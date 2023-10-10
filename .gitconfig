@@ -1,7 +1,9 @@
 [user]
-  name=Matt Chapman
+  name = Matt Chapman
+  email = mattc@cogapp.com
 
 [alias]
+  yolo = push --force --no-verify
   cp = cherry-pick
   st = status -s
   cl = clone
