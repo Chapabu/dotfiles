@@ -1,8 +1,0 @@
-#! /usr/bin/env bash
-echo "Loaded completions..."
-
-autoload bashcompinit
-bashcompinit -D
-
-# Zsh
-fpath=(/usr/local/share/zsh-completions $fpath)
