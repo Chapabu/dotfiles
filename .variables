@@ -1,4 +1,0 @@
-#! /usr/bin/env bash
-echo "Loaded variables..."
-
-# CLI colours
